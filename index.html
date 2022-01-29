@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Product upload from local storage</title>
+  <!-- Font awesome CDN link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Product upload section start-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 my-5">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="text-center text-dark">
+              Add Products
+            </h2>
+            <form id="product_upload">
+              <div class="form-group mb-3">
+                <input class="form-control" type="text" name="name" id="name" placeholder="Product Name" />
+              </div>
+              <div class="form-group mb-3">
+                <input class="form-control" type="text" name="s_prize" id="s_prize" placeholder="Sell Prize" />
+              </div>
+              <div class="form-group mb-3">
+                <input class="form-control" type="text" name="r_prize" id="r_prize" placeholder="Regular Prize" />
+              </div>
+              <div class="form-group mb-3">
+                <input class="form-control" type="text" name="image" id="image"
+                  placeholder=" Product Image link(url)" />
+              </div>
+              <input type="submit" value="Add product" class="btn btn-primary w-100" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <!--col md -4-->
+      <div class="col-md-8 my-5">
+        <div class="msg"></div>
+        <input class="form-control" type="search" name="search" id="search" placeholder="Search Products" />
+        <div class="product_section row"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="function.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

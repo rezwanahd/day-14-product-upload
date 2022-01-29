@@ -1,0 +1,14 @@
+span.r_price {
+  text-decoration: line-through;
+  color: #9f9292;
+  font-size: 20px;
+}
+.card-img,
+.card-img-top {
+  height: 250px;
+  object-fit: fill;
+}
+.h5,
+h5 {
+  font-size: 1.75rem;
+}
